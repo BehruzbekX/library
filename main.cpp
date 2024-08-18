@@ -1,6 +1,9 @@
+// #pragma GCC target("avx2,popcnt")
+
 #include "bits/extc++.h"
 
 using namespace std;
+
 template<typename T>
 using VI = vector<T>;
 template<typename T>
@@ -15,15 +18,25 @@ typedef long long LL;
 typedef unsigned long long ULL;
 
 
-#define FOR(I,N) for(auto (I) = 0;I < (N);++(I))
-#define FORI(I,A,B,N) for(auto (I) = (A); (I) < (B);(I) += (N))
-#define TEST int __T;R(__T);FOR(I,__T)
+
+// https://trap.jp/post/1224/
+#define FOR1(a) for (LL _ = 0; _ < (a); ++_)
+#define FOR2(i, a) for (LL i = 0; i < (a); ++i)
+#define FOR3(i, a, b) for (LL i = a; i < (b); ++i)
+#define FOR4(i, a, b, c) for (LL i = a; i < (b); i += (c))
+#define FOR1_R(a) for (LL i = (a)-1; i >= (0); --i)
+#define FOR2_R(i, a) for (LL i = (a)-1; i >= (0); --i)
+#define FOR3_R(i, a, b) for (LL i = (b)-1; i >= (a); --i)
+#define overload4(a, b, c, d, e, ...) e
+#define overload3(a, b, c, d, ...) d
+#define FOR(...) overload4(__VA_ARGS__, FOR4, FOR3, FOR2, FOR1)(__VA_ARGS__)
+#define FOR_R(...) overload3(__VA_ARGS__, FOR3_R, FOR2_R, FOR1_R)(__VA_ARGS__)
+#define TEST int __T;R(__T);FOR(cs,__T)
 
 #define F first
 #define S second
 #define MP make_pair
 #define PB emplace_back
-
 #define MIN(A) *min_element(ALL(A))
 #define MAX(A) *max_element(ALL(A))
 #define LB(c,x) distance((c).begin(), lower_bound(ALL(c),(x)))
@@ -70,6 +83,12 @@ T POP(pqg<T> &a) {
     T x = a.top();
     a.pop();
     return x;
+}
+template<class Q,class G>
+VI<Q> PSUM(const VI<G> &A) {
+    VI<Q> p(SZ(A) + 1);
+    FOR(i,SZ(A)) p[i + 1] = p[i] + A[i];
+    return p;
 }
 namespace io {
     template<class t>
@@ -154,9 +173,9 @@ using namespace io;
 #define DB(...) \
     double __VA_ARGS__; \
     R(__VA_ARGS__);
-#define VEC(T,N,S) \
-    VI<T> N(S); \
-    R(N);
+#define VEC(type,name,size) \
+    VI<type> name(size); \
+    R(name);
 
 void solve() {
     
@@ -164,5 +183,6 @@ void solve() {
 
 signed main() {
     ios::sync_with_stdio(false), cin.tie(nullptr);
+    // TEST
     solve();
 }
