@@ -1,6 +1,6 @@
 // #pragma GCC target("avx2,popcnt")
 
-#include "bits/extc++.h"
+#include "bits/stdc++.h"
 
 using namespace std;
 
@@ -178,7 +178,7 @@ using namespace io;
     R(name);
 
 void solve() {
-    
+
 }
 
 signed main() {
