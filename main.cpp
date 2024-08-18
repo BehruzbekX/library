@@ -157,13 +157,9 @@ using namespace io;
 #define VEC(T,N,S) \
     VI<T> N(S); \
     R(N);
-void CR(){}
-template<class T,class... U>
-void CR(const T &head, const U &... tail) {
 
-}
 void solve() {
-
+    
 }
 
 signed main() {
