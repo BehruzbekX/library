@@ -154,13 +154,18 @@ namespace io {
     }
 
     template<class t>
-    istream &operator>>(istream &in, vector<t> &a) {
+    istream &operator>>(istream &in, VI<t> &a) {
         for (auto &nx: a) {
             in >> nx;
         }
         return in;
     }
-
+    template<class t>
+    istream &operator>>(istream &in, VI<VI<t>> &a) {
+        for (auto &nx: a) for(auto &ny : nx) in >> ny;
+        return in;
+    }
+    
     template<class t, class u>
     istream &operator>>(istream &in, vector<pair<t, u> > &p) {
         for (auto &nx: p) in >> nx.first >> nx.second;
@@ -243,13 +248,15 @@ using namespace io;
 #define VEC(type,name,size) \
     VI<type> name(size); \
     R(name)
-
+#define VECC(type,name,h,w) \
+    VI<VI<type>> name(h,VI<type>(w));\
+    R(name);
 void solve() {
     
 }
 
 signed main() {
     ios::sync_with_stdio(false), cin.tie(nullptr);
-    TEST
+    // TEST
     solve();
 }
