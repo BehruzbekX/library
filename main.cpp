@@ -127,9 +127,10 @@ T POP(pqg<T> &a) {
 }
 
 template<class Q, class G>
-VI<Q> PSUM(const VI<G> &A) {
+VI<Q> PSUM(const VI<G> &A,int off = 1) {
     VI<Q> p(SZ(A) + 1);
     FOR(i, SZ(A)) p[i + 1] = p[i] + A[i];
+    if(off == 0) p.erase(p.begin());
     return p;
 }
 
@@ -165,18 +166,18 @@ namespace io {
         for (auto &nx: a) for(auto &ny : nx) in >> ny;
         return in;
     }
-    
-    template<class t, class u>
-    istream &operator>>(istream &in, vector<pair<t, u> > &p) {
-        for (auto &nx: p) in >> nx.first >> nx.second;
-        return in;
-    }
-
     template<class t, class u>
     istream &operator>>(istream &in, pair<t, u> &p) {
         in >> p.first >> p.second;
         return in;
     }
+    template<class t, class u>
+    istream &operator>>(istream &in, VI<pair<t, u> > &p) {
+        for (auto &nx: p) in >> nx;
+        return in;
+    }
+
+
 
     template<class T>
     void _R(T &x) { cin >> x; }
@@ -248,9 +249,17 @@ using namespace io;
 #define VEC(type,name,size) \
     VI<type> name(size); \
     R(name)
-#define VECC(type,name,h,w) \
+#define VECC(type,name, h,w) \
     VI<VI<type>> name(h,VI<type>(w));\
-    R(name);
+    R(name)
+
+void YES(bool x = 1) {W(x ? "YES" : "NO");}
+void NO(bool x = 1) {YES(!x);}
+void Yes(bool x = 1) {W(x ? "Yes" : "No");}
+void No(bool x = 1) {YES(!x);}
+void yes(bool x = 1) {W(x ? "yes" : "no");}
+void no(bool x = 1) {YES(!x);}
+
 void solve() {
     
 }
