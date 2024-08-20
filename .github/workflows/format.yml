@@ -1,0 +1,37 @@
+name: format
+
+on:
+  push:
+    branches:
+    - master
+  pull_request:
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.8'
+
+    - name: Install dependencies
+      run: pip3 install .[dev]
+
+    - name: Run --help
+      run: oj-verify -h
+
+    - name: Run pylint
+      run: pylint --rcfile=setup.cfg onlinejudge_verify onlinejudge_bundle tests setup.py
+
+    - name: Run isort
+      run: isort --check-only --diff onlinejudge_verify onlinejudge_bundle tests setup.py
+
+    - name: Run yapf
+      run: yapf --diff --recursive onlinejudge_verify onlinejudge_bundle tests setup.py
+
+    - name: Run mypy
+      run: mypy onlinejudge_verify onlinejudge_bundle setup.py
