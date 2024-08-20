@@ -1,1 +1,0 @@
-exclude: ["onlinejudge_verify", "onlinejudge_bundle", "tests", "onlinejudge_verify_resources", "setup.py"]
