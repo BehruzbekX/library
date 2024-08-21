@@ -1,5 +1,4 @@
 
-#include "my_template.hpp"
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/4/ALDS1_4_B"
 #include <my_template.hpp>
 using namespace std;
