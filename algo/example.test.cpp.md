@@ -33,6 +33,7 @@ data:
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: algo/example.test.cpp
+
 layout: document
 redirect_from:
 - /verify/algo/example.test.cpp
