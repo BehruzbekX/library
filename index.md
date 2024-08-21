@@ -3,7 +3,7 @@ data:
   libraryCategories:
   - name: algo
     pages:
-    - icon: ':warning:'
+    - icon: ':x:'
       path: algo/my_template.hpp
       title: algo/my_template.hpp
   verificationCategories:

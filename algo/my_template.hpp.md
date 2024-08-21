@@ -2,10 +2,13 @@
 data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
-  _extendedVerifiedWith: []
-  _isVerificationFailed: false
+  _extendedVerifiedWith:
+  - icon: ':x:'
+    path: algo/example.test.cpp
+    title: algo/example.test.cpp
+  _isVerificationFailed: true
   _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':x:'
   attributes:
     links:
     - https://trap.jp/post/1224/
@@ -107,8 +110,9 @@ data:
   path: algo/my_template.hpp
   requiredBy: []
   timestamp: '2024-08-21 14:21:41+05:00'
-  verificationStatus: LIBRARY_NO_TESTS
-  verifiedWith: []
+  verificationStatus: LIBRARY_ALL_WA
+  verifiedWith:
+  - algo/example.test.cpp
 documentation_of: algo/my_template.hpp
 layout: document
 redirect_from:
