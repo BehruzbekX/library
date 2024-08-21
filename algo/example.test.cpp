@@ -1,4 +1,4 @@
-#include <my_template.hpp>
+#include "my_template.hpp"
 
 
 #define PROBLEM "https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/4/ALDS1_4_B"
@@ -11,7 +11,7 @@ using namespace std;
 
 int main() {
     int n; cin >> n;
-    vector<int> s(n);
+    VI<int> s(n);
     REP (i, n) {
         cin >> s[i];
     }
