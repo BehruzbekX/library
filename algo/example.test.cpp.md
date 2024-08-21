@@ -4,12 +4,14 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: hpp
-  _verificationStatusIcon: ':warning:'
+  _pathExtension: cpp
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
+    '*NOT_SPECIAL_COMMENTS*': ''
+    PROBLEM: https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/4/ALDS1_4_B
     links:
     - https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/4/ALDS1_4_B
-  bundledCode: "#line 1 \"algo/binary-indexed-tree.hpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/4/ALDS1_4_B\"\
+  bundledCode: "#line 1 \"algo/example.test.cpp\"\n#define PROBLEM \"https://onlinejudge.u-aizu.ac.jp/courses/lesson/1/ALDS1/4/ALDS1_4_B\"\
     \n#include <algorithm>\n#include <iostream>\n#include <vector>\n#define REP(i,\
     \ n) for (int i = 0; (i) < (int)(n); ++ (i))\n#define ALL(x) std::begin(x), std::end(x)\n\
     using namespace std;\n\nint main() {\n    int n; cin >> n;\n    vector<int> s(n);\n\
@@ -24,16 +26,16 @@ data:
     \ cnt = 0;\n    while (q --) {\n        int t_i; cin >> t_i;\n        cnt += binary_search(ALL(s),\
     \ t_i);\n    }\n    cout << cnt << endl;\n    return 0;\n}\n"
   dependsOn: []
-  isVerificationFile: false
-  path: algo/binary-indexed-tree.hpp
+  isVerificationFile: true
+  path: algo/example.test.cpp
   requiredBy: []
-  timestamp: '2024-08-21 12:07:24+05:00'
-  verificationStatus: LIBRARY_NO_TESTS
+  timestamp: '2024-08-21 12:09:08+05:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: algo/binary-indexed-tree.hpp
+documentation_of: algo/example.test.cpp
 layout: document
 redirect_from:
-- /library/algo/binary-indexed-tree.hpp
-- /library/algo/binary-indexed-tree.hpp.html
-title: algo/binary-indexed-tree.hpp
+- /verify/algo/example.test.cpp
+- /verify/algo/example.test.cpp.html
+title: algo/example.test.cpp
 ---

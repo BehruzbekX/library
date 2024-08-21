@@ -1,11 +1,11 @@
 ---
 data:
-  libraryCategories:
+  libraryCategories: []
+  verificationCategories:
   - name: algo
     pages:
-    - icon: ':warning:'
-      path: algo/binary-indexed-tree.hpp
-      title: algo/binary-indexed-tree.hpp
-  verificationCategories: []
+    - icon: ':heavy_check_mark:'
+      path: algo/example.test.cpp
+      title: algo/example.test.cpp
 layout: toppage
 ---
