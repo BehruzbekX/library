@@ -5,7 +5,7 @@ data:
     pages:
     - icon: ':warning:'
       path: algo/binary-indexed-tree.hpp
-      title: Binary Indexed Tree(Fenwick Tree)
+      title: algo/binary-indexed-tree.hpp
   verificationCategories: []
 layout: toppage
 ---
