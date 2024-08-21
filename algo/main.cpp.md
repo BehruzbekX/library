@@ -104,15 +104,15 @@ data:
     \ cin.tie(nullptr);\n    // TEST\n    solve();\n}\n"
   dependsOn: []
   isVerificationFile: false
-  path: main.cpp
+  path: algo/main.cpp
   requiredBy: []
-  timestamp: '2024-08-20 21:52:12+05:00'
+  timestamp: '2024-08-21 11:18:38+05:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: main.cpp
+documentation_of: algo/main.cpp
 layout: document
 redirect_from:
-- /library/main.cpp
-- /library/main.cpp.html
-title: main.cpp
+- /library/algo/main.cpp
+- /library/algo/main.cpp.html
+title: algo/main.cpp
 ---

@@ -1,37 +1,37 @@
 ---
 data:
   libraryCategories:
-  - name: .
+  - name: algo
     pages:
     - icon: ':warning:'
-      path: Z-Function.cpp
-      title: Z-Function.cpp
+      path: algo/Z-Function.cpp
+      title: algo/Z-Function.cpp
     - icon: ':warning:'
-      path: binpow.cpp
-      title: binpow.cpp
+      path: algo/binpow.cpp
+      title: algo/binpow.cpp
     - icon: ':warning:'
-      path: fenwick.cpp
-      title: fenwick.cpp
+      path: algo/fenwick.cpp
+      title: algo/fenwick.cpp
     - icon: ':warning:'
-      path: fibonaci.cpp
-      title: fibonaci.cpp
+      path: algo/fibonaci.cpp
+      title: algo/fibonaci.cpp
     - icon: ':warning:'
-      path: main.cpp
-      title: main.cpp
+      path: algo/main.cpp
+      title: algo/main.cpp
     - icon: ':warning:'
-      path: miller.cpp
-      title: miller.cpp
+      path: algo/miller.cpp
+      title: algo/miller.cpp
     - icon: ':warning:'
-      path: phi.cpp
-      title: phi.cpp
+      path: algo/phi.cpp
+      title: algo/phi.cpp
     - icon: ':warning:'
-      path: sparse_table.cpp
-      title: sparse_table.cpp
+      path: algo/sparse_table.cpp
+      title: algo/sparse_table.cpp
   verificationCategories:
-  - name: .
+  - name: algo
     pages:
     - icon: ':heavy_check_mark:'
-      path: example.test.cpp
-      title: example.test.cpp
+      path: algo/example.test.cpp
+      title: algo/example.test.cpp
 layout: toppage
 ---

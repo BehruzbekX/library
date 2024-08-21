@@ -8,7 +8,7 @@ data:
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: "#line 1 \"fenwick.cpp\"\n//Fenwick<T> a(vector<T> arr);\n//Fenwick<T>\
+  bundledCode: "#line 1 \"algo/fenwick.cpp\"\n//Fenwick<T> a(vector<T> arr);\n//Fenwick<T>\
     \ a(n);\n//Supports MIN,MAX 0..R , with update\n//Suports SUM [L,R] with point\
     \ update\ntemplate<typename T> struct Fenwick {\n    vector<T> bit;\n    int n;\n\
     \    const int INF = 1e9 + 1;\n    int op(int x,int y){\n        int z = (x +\
@@ -36,15 +36,15 @@ data:
     };\n"
   dependsOn: []
   isVerificationFile: false
-  path: fenwick.cpp
+  path: algo/fenwick.cpp
   requiredBy: []
-  timestamp: '2024-08-20 21:52:12+05:00'
+  timestamp: '2024-08-21 11:18:38+05:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: fenwick.cpp
+documentation_of: algo/fenwick.cpp
 layout: document
 redirect_from:
-- /library/fenwick.cpp
-- /library/fenwick.cpp.html
-title: fenwick.cpp
+- /library/algo/fenwick.cpp
+- /library/algo/fenwick.cpp.html
+title: algo/fenwick.cpp
 ---
