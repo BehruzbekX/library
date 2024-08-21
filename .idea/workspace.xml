@@ -10,8 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba4d98cc-b6ff-45e6-8ec6-d35ca00bcbdb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/algo/binary-indexed-tree.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/algo/binary-indexed-tree.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algo/example.test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algo/binary-indexed-tree.hpp" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +85,7 @@
       <updated>1724172016227</updated>
       <workItem from="1724172017461" duration="1507000" />
       <workItem from="1724221062108" duration="533000" />
-      <workItem from="1724221678244" duration="1826000" />
+      <workItem from="1724221678244" duration="1930000" />
     </task>
     <servers />
   </component>
