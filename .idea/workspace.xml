@@ -10,7 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ba4d98cc-b6ff-45e6-8ec6-d35ca00bcbdb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.vscode/launch.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/a.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/other/fastio.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/random/base.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/library_checker/aplusb.test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +94,7 @@
       <workItem from="1724230588561" duration="313000" />
       <workItem from="1724231904849" duration="2026000" />
       <workItem from="1724243572649" duration="2721000" />
+      <workItem from="1724344657670" duration="250000" />
     </task>
     <servers />
   </component>
