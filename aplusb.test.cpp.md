@@ -1,21 +1,23 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: fastio.hpp
     title: fastio.hpp
-  - icon: ':warning:'
+  - icon: ':heavy_check_mark:'
     path: template.hpp
     title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':warning:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
+    '*NOT_SPECIAL_COMMENTS*': ''
+    PROBLEM: https://judge.yosupo.jp/problem/aplusb
     links:
     - https://judge.yosupo.jp/problem/aplusb
-  bundledCode: "#line 1 \"main.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/aplusb\"\
+  bundledCode: "#line 1 \"aplusb.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/aplusb\"\
     \r\n\r\n#line 1 \"template.hpp\"\n// #pragma GCC target(\"avx2,popcnt\")\r\n\r\
     \n\r\n#include <bits/stdc++.h>\r\n\r\n\r\nusing namespace std;\r\n\r\ntemplate<typename\
     \ T>\r\nusing VI = vector<T>;\r\ntemplate<typename T>\r\nusing pq = priority_queue<T>;\r\
@@ -102,7 +104,7 @@ data:
     \r\n    R(name)\r\n\r\nvoid YES(bool x = 1) {W(x ? \"YES\" : \"NO\");}\r\nvoid\
     \ NO(bool x = 1) {YES(!x);}\r\nvoid Yes(bool x = 1) {W(x ? \"Yes\" : \"No\");}\r\
     \nvoid No(bool x = 1) {YES(!x);}\r\nvoid yes(bool x = 1) {W(x ? \"yes\" : \"no\"\
-    );}\r\nvoid no(bool x = 1) {YES(!x);}\n#line 5 \"main.cpp\"\n\r\nvoid solve()\
+    );}\r\nvoid no(bool x = 1) {YES(!x);}\n#line 5 \"aplusb.test.cpp\"\n\r\nvoid solve()\
     \ {\r\n    i128 a,b;R(a,b);\r\n    W(a + b);\r\n}\r\n\r\nsigned main() {\r\n \
     \   ios::sync_with_stdio(false), cin.tie(nullptr);\r\n    // TEST\r\n\r\n    solve();\r\
     \n}\r\n"
@@ -113,16 +115,16 @@ data:
   dependsOn:
   - template.hpp
   - fastio.hpp
-  isVerificationFile: false
-  path: main.cpp
+  isVerificationFile: true
+  path: aplusb.test.cpp
   requiredBy: []
-  timestamp: '2024-08-22 15:56:19+05:00'
-  verificationStatus: LIBRARY_NO_TESTS
+  timestamp: '2024-08-22 16:06:27+05:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
-documentation_of: main.cpp
+documentation_of: aplusb.test.cpp
 layout: document
 redirect_from:
-- /library/main.cpp
-- /library/main.cpp.html
-title: main.cpp
+- /verify/aplusb.test.cpp
+- /verify/aplusb.test.cpp.html
+title: aplusb.test.cpp
 ---
