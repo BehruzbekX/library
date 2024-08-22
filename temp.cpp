@@ -140,7 +140,7 @@ VI<Q> PSUM(const VI<G> &A,int off = 1) {
     if(off == 0) p.erase(p.begin());
     return p;
 }
-#line 1 "io\\fastio.hpp"
+#line 1 "other\\fastio.hpp"
 istream &operator>>(istream &in, i128 &a) {
         string s;
         in >> s;
@@ -261,6 +261,8 @@ void Yes(bool x = 1) {W(x ? "Yes" : "No");}
 void No(bool x = 1) {YES(!x);}
 void yes(bool x = 1) {W(x ? "yes" : "no");}
 void no(bool x = 1) {YES(!x);}
+#line 2 "random\\shuffle.hpp"
+
 #line 2 "random\\base.hpp"
 
 ULL RNG_64() {
@@ -276,10 +278,22 @@ ULL RNG_64() {
 ULL RNG(ULL lim) { return RNG_64() % lim; }
 
 LL RNG(LL l, LL r) { return l + RNG_64() % (r - l); }
+#line 4 "random\\shuffle.hpp"
+
+template<class T>
+void shuffle(VI<T>& A){
+    FOR(i,SZ(A)){
+        int j = RNG(0,i + 1);
+        if(i != j) swap(A[i],A[j]);
+    }
+}
 #line 6 "main.cpp"
 
 void solve() {
-     W(RNG(50,100));
+     INT(N);
+	VEC(int,A,N);
+	shuffle(A);
+	W(A);
 }
 
 signed main() {
