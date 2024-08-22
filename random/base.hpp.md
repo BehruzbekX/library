@@ -5,6 +5,9 @@ data:
   - icon: ':warning:'
     path: main.cpp
     title: main.cpp
+  - icon: ':warning:'
+    path: random/shuffle.hpp
+    title: random/shuffle.hpp
   _extendedVerifiedWith:
   - icon: ':heavy_check_mark:'
     path: test/library_checker/aplusb.test.cpp
@@ -29,6 +32,7 @@ data:
   isVerificationFile: false
   path: random/base.hpp
   requiredBy:
+  - random/shuffle.hpp
   - main.cpp
   timestamp: '2024-08-22 21:41:52+05:00'
   verificationStatus: LIBRARY_ALL_AC

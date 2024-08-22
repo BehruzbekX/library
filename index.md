@@ -22,6 +22,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: random/base.hpp
       title: random/base.hpp
+    - icon: ':warning:'
+      path: random/shuffle.hpp
+      title: random/shuffle.hpp
   verificationCategories:
   - name: test/library_checker
     pages:
