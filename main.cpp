@@ -1,7 +1,7 @@
-#define PROBLEM https://judge.yosupo.jp/problem/aplusb
+#define PROBLEM "https://judge.yosupo.jp/problem/aplusb"
 
-#include "library/template.hpp"
-#include "library/fastio.hpp"
+#include "template.hpp"
+#include "fastio.hpp"
 
 void solve() {
     i128 a,b;R(a,b);
