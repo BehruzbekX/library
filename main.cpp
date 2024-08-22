@@ -2,7 +2,7 @@
 
 #include "template.hpp"
 #include "other/fastio.hpp"
-#include "random/base.hpp"
+#include "random/shuffle.hpp"
 
 void solve() {
      LL(A,B);
