@@ -1,5 +1,5 @@
 #line 1 "main.cpp"
-#define PROBLEM https://judge.yosupo.jp/problem/aplusb
+#define "PROBLEM https://judge.yosupo.jp/problem/aplusb"
 
 #line 1 "template.hpp"
 // #pragma GCC target("avx2,popcnt")
