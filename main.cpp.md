@@ -7,6 +7,9 @@ data:
   - icon: ':heavy_check_mark:'
     path: random/base.hpp
     title: random/base.hpp
+  - icon: ':warning:'
+    path: random/shuffle.hpp
+    title: random/shuffle.hpp
   - icon: ':heavy_check_mark:'
     path: template.hpp
     title: template.hpp
@@ -18,8 +21,8 @@ data:
   attributes:
     links:
     - https://judge.yosupo.jp/problem/aplusb
-  bundledCode: "#line 1 \"main.cpp\"\n#define PROBLEM https://judge.yosupo.jp/problem/aplusb\n\
-    \n#line 1 \"template.hpp\"\n// #pragma GCC target(\"avx2,popcnt\")\n\n\n#include\
+  bundledCode: "#line 1 \"main.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/aplusb\"\
+    \n\n#line 1 \"template.hpp\"\n// #pragma GCC target(\"avx2,popcnt\")\n\n\n#include\
     \ <bits/stdc++.h>\n\n\nusing namespace std;\n\ntemplate<typename T>\nusing VI\
     \ = vector<T>;\ntemplate<typename T>\nusing pq = priority_queue<T>;\ntemplate<class\
     \ T>\nusing pqg = priority_queue<T, VI<T>, greater<int> >;\n\n#define SZ(A) ((int)(A).size())\n\
@@ -99,26 +102,30 @@ data:
     \ {W(x ? \"YES\" : \"NO\");}\nvoid NO(bool x = 1) {YES(!x);}\nvoid Yes(bool x\
     \ = 1) {W(x ? \"Yes\" : \"No\");}\nvoid No(bool x = 1) {YES(!x);}\nvoid yes(bool\
     \ x = 1) {W(x ? \"yes\" : \"no\");}\nvoid no(bool x = 1) {YES(!x);}\n#line 2 \"\
-    random/base.hpp\"\n\nULL RNG_64() {\n    static uint64_t x_\n        = uint64_t(chrono::duration_cast<chrono::nanoseconds>(\n\
+    random/shuffle.hpp\"\n\n#line 2 \"random/base.hpp\"\n\nULL RNG_64() {\n    static\
+    \ uint64_t x_\n        = uint64_t(chrono::duration_cast<chrono::nanoseconds>(\n\
     \                       chrono::high_resolution_clock::now().time_since_epoch())\n\
     \                       .count())\n          * 10150724397891781847ULL;\n    x_\
     \ ^= x_ << 7;\n    return x_ ^= x_ >> 9;\n}\n\nULL RNG(ULL lim) { return RNG_64()\
-    \ % lim; }\n\nLL RNG(LL l, LL r) { return l + RNG_64() % (r - l); }\n#line 6 \"\
-    main.cpp\"\n\nvoid solve() {\n     LL(A,B);\n     W(A + B);\n}\n\nsigned main()\
-    \ {\n    ios::sync_with_stdio(false), cin.tie(nullptr);\n    // TEST\n\n    solve();\n\
-    }\n"
-  code: "#define PROBLEM https://judge.yosupo.jp/problem/aplusb\n\n#include \"template.hpp\"\
-    \n#include \"other/fastio.hpp\"\n#include \"random/base.hpp\"\n\nvoid solve()\
-    \ {\n     LL(A,B);\n     W(A + B);\n}\n\nsigned main() {\n    ios::sync_with_stdio(false),\
-    \ cin.tie(nullptr);\n    // TEST\n\n    solve();\n}"
+    \ % lim; }\n\nLL RNG(LL l, LL r) { return l + RNG_64() % (r - l); }\n#line 4 \"\
+    random/shuffle.hpp\"\n\ntemplate<class T>\nvoid shuffle(vi<T> &A){\n    FOR(i,SZ(A)){\n\
+    \        int j = RNG(0,i + 1);\n        if(i != j) swap(A[i],A[j]);\n    }\n}\n\
+    #line 6 \"main.cpp\"\n\nvoid solve() {\n     LL(A,B);\n     W(A + B);\n}\n\nsigned\
+    \ main() {\n    ios::sync_with_stdio(false), cin.tie(nullptr);\n    // TEST\n\n\
+    \    solve();\n}\n"
+  code: "#define PROBLEM \"https://judge.yosupo.jp/problem/aplusb\"\n\n#include \"\
+    template.hpp\"\n#include \"other/fastio.hpp\"\n#include \"random/shuffle.hpp\"\
+    \n\nvoid solve() {\n     LL(A,B);\n     W(A + B);\n}\n\nsigned main() {\n    ios::sync_with_stdio(false),\
+    \ cin.tie(nullptr);\n    // TEST\n\n    solve();\n}\n"
   dependsOn:
   - template.hpp
   - other/fastio.hpp
+  - random/shuffle.hpp
   - random/base.hpp
   isVerificationFile: false
   path: main.cpp
   requiredBy: []
-  timestamp: '2024-08-22 21:41:52+05:00'
+  timestamp: '2024-08-22 22:04:22+05:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: main.cpp

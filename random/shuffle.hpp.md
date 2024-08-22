@@ -4,7 +4,10 @@ data:
   - icon: ':heavy_check_mark:'
     path: random/base.hpp
     title: random/base.hpp
-  _extendedRequiredBy: []
+  _extendedRequiredBy:
+  - icon: ':warning:'
+    path: main.cpp
+    title: main.cpp
   _extendedVerifiedWith: []
   _isVerificationFailed: false
   _pathExtension: hpp
@@ -26,7 +29,8 @@ data:
   - random/base.hpp
   isVerificationFile: false
   path: random/shuffle.hpp
-  requiredBy: []
+  requiredBy:
+  - main.cpp
   timestamp: '2024-08-22 22:02:53+05:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
