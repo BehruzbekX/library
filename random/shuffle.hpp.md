@@ -20,10 +20,10 @@ data:
     \                       .count())\n          * 10150724397891781847ULL;\n    x_\
     \ ^= x_ << 7;\n    return x_ ^= x_ >> 9;\n}\n\nULL RNG(ULL lim) { return RNG_64()\
     \ % lim; }\n\nLL RNG(LL l, LL r) { return l + RNG_64() % (r - l); }\n#line 4 \"\
-    random/shuffle.hpp\"\n\ntemplate<class T>\nvoid shuffle(vi<T> &A){\n    FOR(i,SZ(A)){\n\
+    random/shuffle.hpp\"\n\ntemplate<class T>\nvoid shuffle(VI<T>& A){\n    FOR(i,SZ(A)){\n\
     \        int j = RNG(0,i + 1);\n        if(i != j) swap(A[i],A[j]);\n    }\n}\n"
-  code: "#pragma once\n\n#include \"random/base.hpp\"\n\ntemplate<class T>\nvoid shuffle(vi<T>\
-    \ &A){\n    FOR(i,SZ(A)){\n        int j = RNG(0,i + 1);\n        if(i != j) swap(A[i],A[j]);\n\
+  code: "#pragma once\n\n#include \"random/base.hpp\"\n\ntemplate<class T>\nvoid shuffle(VI<T>&\
+    \ A){\n    FOR(i,SZ(A)){\n        int j = RNG(0,i + 1);\n        if(i != j) swap(A[i],A[j]);\n\
     \    }\n}"
   dependsOn:
   - random/base.hpp
@@ -31,7 +31,7 @@ data:
   path: random/shuffle.hpp
   requiredBy:
   - main.cpp
-  timestamp: '2024-08-22 22:02:53+05:00'
+  timestamp: '2024-08-22 22:24:26+05:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: random/shuffle.hpp

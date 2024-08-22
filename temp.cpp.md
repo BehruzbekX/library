@@ -52,14 +52,14 @@ data:
     \ T x = a.top();\n    a.pop();\n    return x;\n}\n\ntemplate<class Q, class G>\n\
     VI<Q> PSUM(const VI<G> &A,int off = 1) {\n    VI<Q> p(SZ(A) + 1);\n    FOR(i,\
     \ SZ(A)) p[i + 1] = p[i] + A[i];\n    if(off == 0) p.erase(p.begin());\n    return\
-    \ p;\n}\n#line 1 \"io\\\\fastio.hpp\"\nistream &operator>>(istream &in, i128 &a)\
-    \ {\n        string s;\n        in >> s;\n        a = 0;\n        for (auto &it:\
-    \ s) if (isdigit(it)) a = a * 10 + it - '0';\n        if (s[0] == '-') a *= -1;\n\
-    \        return in;\n    }\n\n    ostream &operator<<(ostream &os, const i128\
-    \ &v) {\n        if (v == 0) return (os << \"0\");\n        i128 num = v;\n  \
-    \      if (v < 0) os << '-', num = -num;\n        string s;\n        for (; num\
-    \ > 0; num /= 10) s.PB((char) (num % 10) + '0');\n        reverse(ALL(s));\n \
-    \       return (os << s);\n    }\n\n    template<class t>\n    istream &operator>>(istream\
+    \ p;\n}\n#line 1 \"other\\\\fastio.hpp\"\nistream &operator>>(istream &in, i128\
+    \ &a) {\n        string s;\n        in >> s;\n        a = 0;\n        for (auto\
+    \ &it: s) if (isdigit(it)) a = a * 10 + it - '0';\n        if (s[0] == '-') a\
+    \ *= -1;\n        return in;\n    }\n\n    ostream &operator<<(ostream &os, const\
+    \ i128 &v) {\n        if (v == 0) return (os << \"0\");\n        i128 num = v;\n\
+    \        if (v < 0) os << '-', num = -num;\n        string s;\n        for (;\
+    \ num > 0; num /= 10) s.PB((char) (num % 10) + '0');\n        reverse(ALL(s));\n\
+    \        return (os << s);\n    }\n\n    template<class t>\n    istream &operator>>(istream\
     \ &in, VI<t> &a) {\n        for (auto &nx: a) {\n            in >> nx;\n     \
     \   }\n        return in;\n    }\n    template<class t>\n    istream &operator>>(istream\
     \ &in, VI<VI<t>> &a) {\n        for (auto &nx: a) for(auto &ny : nx) in >> ny;\n\
@@ -91,14 +91,17 @@ data:
     \ {W(x ? \"YES\" : \"NO\");}\nvoid NO(bool x = 1) {YES(!x);}\nvoid Yes(bool x\
     \ = 1) {W(x ? \"Yes\" : \"No\");}\nvoid No(bool x = 1) {YES(!x);}\nvoid yes(bool\
     \ x = 1) {W(x ? \"yes\" : \"no\");}\nvoid no(bool x = 1) {YES(!x);}\n#line 2 \"\
-    random\\\\base.hpp\"\n\nULL RNG_64() {\n    static uint64_t x_\n        = uint64_t(chrono::duration_cast<chrono::nanoseconds>(\n\
+    random\\\\shuffle.hpp\"\n\n#line 2 \"random\\\\base.hpp\"\n\nULL RNG_64() {\n\
+    \    static uint64_t x_\n        = uint64_t(chrono::duration_cast<chrono::nanoseconds>(\n\
     \                       chrono::high_resolution_clock::now().time_since_epoch())\n\
     \                       .count())\n          * 10150724397891781847ULL;\n    x_\
     \ ^= x_ << 7;\n    return x_ ^= x_ >> 9;\n}\n\nULL RNG(ULL lim) { return RNG_64()\
-    \ % lim; }\n\nLL RNG(LL l, LL r) { return l + RNG_64() % (r - l); }\n#line 6 \"\
-    main.cpp\"\n\nvoid solve() {\n     W(RNG(50,100));\n}\n\nsigned main() {\n   \
-    \ ios::sync_with_stdio(false), cin.tie(nullptr);\n    // TEST\n\n    solve();\n\
-    }\n"
+    \ % lim; }\n\nLL RNG(LL l, LL r) { return l + RNG_64() % (r - l); }\n#line 4 \"\
+    random\\\\shuffle.hpp\"\n\ntemplate<class T>\nvoid shuffle(VI<T>& A){\n    FOR(i,SZ(A)){\n\
+    \        int j = RNG(0,i + 1);\n        if(i != j) swap(A[i],A[j]);\n    }\n}\n\
+    #line 6 \"main.cpp\"\n\nvoid solve() {\n     INT(N);\n\tVEC(int,A,N);\n\tshuffle(A);\n\
+    \tW(A);\n}\n\nsigned main() {\n    ios::sync_with_stdio(false), cin.tie(nullptr);\n\
+    \    // TEST\n\n    solve();\n}\n"
   code: "#line 1 \"main.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/aplusb\"\
     \n\n#line 1 \"template.hpp\"\n// #pragma GCC target(\"avx2,popcnt\")\n\n\n#include\
     \ <bits/stdc++.h>\n\n\nusing namespace std;\n\ntemplate<typename T>\nusing VI\
@@ -141,14 +144,14 @@ data:
     \ T x = a.top();\n    a.pop();\n    return x;\n}\n\ntemplate<class Q, class G>\n\
     VI<Q> PSUM(const VI<G> &A,int off = 1) {\n    VI<Q> p(SZ(A) + 1);\n    FOR(i,\
     \ SZ(A)) p[i + 1] = p[i] + A[i];\n    if(off == 0) p.erase(p.begin());\n    return\
-    \ p;\n}\n#line 1 \"io\\\\fastio.hpp\"\nistream &operator>>(istream &in, i128 &a)\
-    \ {\n        string s;\n        in >> s;\n        a = 0;\n        for (auto &it:\
-    \ s) if (isdigit(it)) a = a * 10 + it - '0';\n        if (s[0] == '-') a *= -1;\n\
-    \        return in;\n    }\n\n    ostream &operator<<(ostream &os, const i128\
-    \ &v) {\n        if (v == 0) return (os << \"0\");\n        i128 num = v;\n  \
-    \      if (v < 0) os << '-', num = -num;\n        string s;\n        for (; num\
-    \ > 0; num /= 10) s.PB((char) (num % 10) + '0');\n        reverse(ALL(s));\n \
-    \       return (os << s);\n    }\n\n    template<class t>\n    istream &operator>>(istream\
+    \ p;\n}\n#line 1 \"other\\\\fastio.hpp\"\nistream &operator>>(istream &in, i128\
+    \ &a) {\n        string s;\n        in >> s;\n        a = 0;\n        for (auto\
+    \ &it: s) if (isdigit(it)) a = a * 10 + it - '0';\n        if (s[0] == '-') a\
+    \ *= -1;\n        return in;\n    }\n\n    ostream &operator<<(ostream &os, const\
+    \ i128 &v) {\n        if (v == 0) return (os << \"0\");\n        i128 num = v;\n\
+    \        if (v < 0) os << '-', num = -num;\n        string s;\n        for (;\
+    \ num > 0; num /= 10) s.PB((char) (num % 10) + '0');\n        reverse(ALL(s));\n\
+    \        return (os << s);\n    }\n\n    template<class t>\n    istream &operator>>(istream\
     \ &in, VI<t> &a) {\n        for (auto &nx: a) {\n            in >> nx;\n     \
     \   }\n        return in;\n    }\n    template<class t>\n    istream &operator>>(istream\
     \ &in, VI<VI<t>> &a) {\n        for (auto &nx: a) for(auto &ny : nx) in >> ny;\n\
@@ -180,19 +183,22 @@ data:
     \ {W(x ? \"YES\" : \"NO\");}\nvoid NO(bool x = 1) {YES(!x);}\nvoid Yes(bool x\
     \ = 1) {W(x ? \"Yes\" : \"No\");}\nvoid No(bool x = 1) {YES(!x);}\nvoid yes(bool\
     \ x = 1) {W(x ? \"yes\" : \"no\");}\nvoid no(bool x = 1) {YES(!x);}\n#line 2 \"\
-    random\\\\base.hpp\"\n\nULL RNG_64() {\n    static uint64_t x_\n        = uint64_t(chrono::duration_cast<chrono::nanoseconds>(\n\
+    random\\\\shuffle.hpp\"\n\n#line 2 \"random\\\\base.hpp\"\n\nULL RNG_64() {\n\
+    \    static uint64_t x_\n        = uint64_t(chrono::duration_cast<chrono::nanoseconds>(\n\
     \                       chrono::high_resolution_clock::now().time_since_epoch())\n\
     \                       .count())\n          * 10150724397891781847ULL;\n    x_\
     \ ^= x_ << 7;\n    return x_ ^= x_ >> 9;\n}\n\nULL RNG(ULL lim) { return RNG_64()\
-    \ % lim; }\n\nLL RNG(LL l, LL r) { return l + RNG_64() % (r - l); }\n#line 6 \"\
-    main.cpp\"\n\nvoid solve() {\n     W(RNG(50,100));\n}\n\nsigned main() {\n   \
-    \ ios::sync_with_stdio(false), cin.tie(nullptr);\n    // TEST\n\n    solve();\n\
-    }\n"
+    \ % lim; }\n\nLL RNG(LL l, LL r) { return l + RNG_64() % (r - l); }\n#line 4 \"\
+    random\\\\shuffle.hpp\"\n\ntemplate<class T>\nvoid shuffle(VI<T>& A){\n    FOR(i,SZ(A)){\n\
+    \        int j = RNG(0,i + 1);\n        if(i != j) swap(A[i],A[j]);\n    }\n}\n\
+    #line 6 \"main.cpp\"\n\nvoid solve() {\n     INT(N);\n\tVEC(int,A,N);\n\tshuffle(A);\n\
+    \tW(A);\n}\n\nsigned main() {\n    ios::sync_with_stdio(false), cin.tie(nullptr);\n\
+    \    // TEST\n\n    solve();\n}\n"
   dependsOn: []
   isVerificationFile: false
   path: temp.cpp
   requiredBy: []
-  timestamp: '2024-08-22 22:09:15+05:00'
+  timestamp: '2024-08-22 22:24:26+05:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: temp.cpp
