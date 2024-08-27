@@ -12,7 +12,7 @@ struct Fenwick{
 	}
 	Fenwick(VI<X>& A):Fenwick(SZ(A)){
 		FOR(i,SZ(A)){
-			update(i + 1,A[i]);
+			update(i + 1,i + 1,A[i]);
 		}
 	}
 	X get(int r){ //A[1] op ... a[r]
