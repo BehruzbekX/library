@@ -41,7 +41,7 @@ for /d /r "%encodedRootDir%" %%D in (*) do (
 )
 
 :: Debug: Print the command to verify
-echo Running command: oj-bundle !includeDirs! !inputFile! > !outputFile! 2> error.log
+echo "Running command: oj-bundle !includeDirs! !inputFile! > !outputFile! 2> error.log"
 
 :: Run oj-bundle with the collected paths
 oj-bundle !includeDirs! !inputFile! > !outputFile! 2> error.log
