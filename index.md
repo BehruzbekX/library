@@ -6,6 +6,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: ds/fenwick/fenwick.hpp
       title: ds/fenwick/fenwick.hpp
+    - icon: ':warning:'
+      path: ds/fenwick/rangefenwick.hpp
+      title: ds/fenwick/rangefenwick.hpp
   - name: ds/segtree
     pages:
     - icon: ':heavy_check_mark:'
