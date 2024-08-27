@@ -376,7 +376,8 @@ void shuffle(VI<T>& A){
 
 using namespace std;
 void solve(){
-    LL(A,B);
+    i128 A,B;
+    R(A,B);
     W(A + B);
 }
 signed main(){
