@@ -1,40 +1,40 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: ds/fenwick/fenwick.hpp
     title: ds/fenwick/fenwick.hpp
   - icon: ':heavy_check_mark:'
     path: ds/segtree/mergesorttree.hpp
     title: ds/segtree/mergesorttree.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: monoid/add.hpp
     title: monoid/add.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: monoid/gcd.hpp
     title: monoid/gcd.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: monoid/max.hpp
     title: monoid/max.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: monoid/min.hpp
     title: monoid/min.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: monoid/xor.hpp
     title: monoid/xor.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: other/fastio.hpp
     title: other/fastio.hpp
   - icon: ':heavy_check_mark:'
     path: prime/miller.hpp
     title: prime/miller.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: random/base.hpp
     title: random/base.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: random/shuffle.hpp
     title: random/shuffle.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.hpp
     title: template.hpp
   _extendedRequiredBy: []

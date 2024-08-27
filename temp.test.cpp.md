@@ -3,9 +3,9 @@ data:
   _extendedDependsOn: []
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/many_aplusb
@@ -144,8 +144,7 @@ data:
     \ shuffle(VI<T>& A){\n    FOR(i,SZ(A)){\n        int j = RNG(0,i + 1);\n     \
     \   if(i != j) swap(A[i],A[j]);\n    }\n}\n#line 13 \"main.test.cpp\"\n\nusing\
     \ namespace std;\nvoid solve(){\n    LL(A,B);\n    W(A + B);\n}\nsigned main(){\n\
-    \    ios::sync_with_stdio(false),cin.tie(nullptr);\n    // TEST\n    solve();\n\
-    }\n"
+    \    ios::sync_with_stdio(false),cin.tie(nullptr);\n    TEST\n    solve();\n}\n"
   code: "#line 1 \"main.test.cpp\"\n#define PROBLEM \"https://judge.yosupo.jp/problem/many_aplusb\"\
     \n\n#line 1 \"template.hpp\"\n// #pragma GCC target(\"avx2,popcnt\")\n\n\n#include\
     \ <bits/stdc++.h>\n\n\nusing namespace std;\n\ntemplate<typename T>\nusing VI\
@@ -277,14 +276,13 @@ data:
     \ shuffle(VI<T>& A){\n    FOR(i,SZ(A)){\n        int j = RNG(0,i + 1);\n     \
     \   if(i != j) swap(A[i],A[j]);\n    }\n}\n#line 13 \"main.test.cpp\"\n\nusing\
     \ namespace std;\nvoid solve(){\n    LL(A,B);\n    W(A + B);\n}\nsigned main(){\n\
-    \    ios::sync_with_stdio(false),cin.tie(nullptr);\n    // TEST\n    solve();\n\
-    }\n"
+    \    ios::sync_with_stdio(false),cin.tie(nullptr);\n    TEST\n    solve();\n}\n"
   dependsOn: []
   isVerificationFile: true
   path: temp.test.cpp
   requiredBy: []
-  timestamp: '2024-08-27 13:49:27+05:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2024-08-27 13:53:08+05:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: temp.test.cpp
 layout: document

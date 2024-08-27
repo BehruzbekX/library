@@ -6,15 +6,15 @@ data:
     path: test/my_test/gen.cpp
     title: test/my_test/gen.cpp
   _extendedVerifiedWith:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: main.test.cpp
     title: main.test.cpp
   - icon: ':heavy_check_mark:'
     path: test/library_checker/aplusb.test.cpp
     title: test/library_checker/aplusb.test.cpp
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: hpp
-  _verificationStatusIcon: ':question:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     links:
     - https://trap.jp/post/1224/
@@ -126,7 +126,7 @@ data:
   requiredBy:
   - test/my_test/gen.cpp
   timestamp: '2024-08-27 13:49:27+05:00'
-  verificationStatus: LIBRARY_SOME_WA
+  verificationStatus: LIBRARY_ALL_AC
   verifiedWith:
   - test/library_checker/aplusb.test.cpp
   - main.test.cpp

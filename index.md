@@ -3,7 +3,7 @@ data:
   libraryCategories:
   - name: ds/fenwick
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: ds/fenwick/fenwick.hpp
       title: ds/fenwick/fenwick.hpp
   - name: ds/segtree
@@ -13,24 +13,24 @@ data:
       title: ds/segtree/mergesorttree.hpp
   - name: monoid
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: monoid/add.hpp
       title: monoid/add.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: monoid/gcd.hpp
       title: monoid/gcd.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: monoid/max.hpp
       title: monoid/max.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: monoid/min.hpp
       title: monoid/min.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: monoid/xor.hpp
       title: monoid/xor.hpp
   - name: other
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: other/fastio.hpp
       title: other/fastio.hpp
   - name: prime
@@ -40,15 +40,15 @@ data:
       title: prime/miller.hpp
   - name: random
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: random/base.hpp
       title: random/base.hpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: random/shuffle.hpp
       title: random/shuffle.hpp
   - name: .
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template.hpp
       title: template.hpp
   - name: test/my_test
@@ -65,10 +65,10 @@ data:
   verificationCategories:
   - name: .
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: main.test.cpp
       title: main.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: temp.test.cpp
       title: temp.test.cpp
   - name: test/library_checker

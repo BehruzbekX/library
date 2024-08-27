@@ -1,41 +1,41 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: ds/fenwick/fenwick.hpp
     title: ds/fenwick/fenwick.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: monoid/add.hpp
     title: monoid/add.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: monoid/gcd.hpp
     title: monoid/gcd.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: monoid/max.hpp
     title: monoid/max.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: monoid/min.hpp
     title: monoid/min.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: monoid/xor.hpp
     title: monoid/xor.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: other/fastio.hpp
     title: other/fastio.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: random/base.hpp
     title: random/base.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: random/shuffle.hpp
     title: random/shuffle.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.hpp
     title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/many_aplusb
@@ -171,14 +171,14 @@ data:
     \    FOR(i,SZ(A)){\n        int j = RNG(0,i + 1);\n        if(i != j) swap(A[i],A[j]);\n\
     \    }\n}\n#line 13 \"main.test.cpp\"\n\nusing namespace std;\nvoid solve(){\n\
     \    LL(A,B);\n    W(A + B);\n}\nsigned main(){\n    ios::sync_with_stdio(false),cin.tie(nullptr);\n\
-    \    // TEST\n    solve();\n}\n"
+    \     TEST\n    solve();\n}\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/many_aplusb\"\n\n#include\
     \ \"template.hpp\"\n#include \"other/fastio.hpp\"\n#include \"ds/fenwick/fenwick.hpp\"\
     \n#include \"monoid/add.hpp\"\n#include \"monoid/gcd.hpp\"\n#include \"monoid/xor.hpp\"\
     \n#include \"monoid/min.hpp\"\n#include \"monoid/max.hpp\"\n#include \"random/base.hpp\"\
     \n#include \"random/shuffle.hpp\"\n\nusing namespace std;\nvoid solve(){\n   \
     \ LL(A,B);\n    W(A + B);\n}\nsigned main(){\n    ios::sync_with_stdio(false),cin.tie(nullptr);\n\
-    \    // TEST\n    solve();\n}"
+    \     TEST\n    solve();\n}"
   dependsOn:
   - template.hpp
   - other/fastio.hpp
@@ -193,8 +193,8 @@ data:
   isVerificationFile: true
   path: main.test.cpp
   requiredBy: []
-  timestamp: '2024-08-27 13:49:27+05:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2024-08-27 13:53:08+05:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: main.test.cpp
 layout: document
