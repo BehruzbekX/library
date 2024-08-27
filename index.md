@@ -80,4 +80,7 @@ data:
       path: test/library_checker/aplusb.test.cpp
       title: test/library_checker/aplusb.test.cpp
 layout: toppage
+
 ---
+https://nyaannyaan.github.io/library/
+https://maspypy.github.io/library/
