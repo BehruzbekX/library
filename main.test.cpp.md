@@ -160,13 +160,15 @@ data:
     \n\n#line 4 \"random/shuffle.hpp\"\n\ntemplate<class T>\nvoid shuffle(VI<T>& A){\n\
     \    FOR(i,SZ(A)){\n        int j = RNG(0,i + 1);\n        if(i != j) swap(A[i],A[j]);\n\
     \    }\n}\n#line 13 \"main.test.cpp\"\n\nusing namespace std;\nvoid solve(){\n\
-    \    LL(A,B);\n    W(A + B);\n}\nsigned main(){\n    TEST\n    solve();\n}\n"
+    \    i128 A,B;\n    R(A,B);\n    W(A + B);\n}\nsigned main(){\n    TEST\n    solve();\n\
+    }\n"
   code: "#define PROBLEM \"https://judge.yosupo.jp/problem/many_aplusb\"\n\n#include\
     \ \"template.hpp\"\n#include \"other/fastio.hpp\"\n#include \"ds/fenwick/fenwick.hpp\"\
     \n#include \"monoid/add.hpp\"\n#include \"monoid/gcd.hpp\"\n#include \"monoid/xor.hpp\"\
     \n#include \"monoid/min.hpp\"\n#include \"monoid/max.hpp\"\n#include \"random/base.hpp\"\
     \n#include \"random/shuffle.hpp\"\n\nusing namespace std;\nvoid solve(){\n   \
-    \ LL(A,B);\n    W(A + B);\n}\nsigned main(){\n    TEST\n    solve();\n}"
+    \ i128 A,B;\n    R(A,B);\n    W(A + B);\n}\nsigned main(){\n    TEST\n    solve();\n\
+    }"
   dependsOn:
   - template.hpp
   - other/fastio.hpp
@@ -181,7 +183,7 @@ data:
   isVerificationFile: true
   path: main.test.cpp
   requiredBy: []
-  timestamp: '2024-08-27 11:58:59+05:00'
+  timestamp: '2024-08-27 12:04:40+05:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: main.test.cpp
