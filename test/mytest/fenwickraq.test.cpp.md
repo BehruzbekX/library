@@ -132,21 +132,22 @@ data:
     \n\tVI<X> bit0,bit1;\n\tint n;\n\tFenwick(int n){\n\t\tthis->n = n;\n\t\tbit0.assign(n\
     \ + 1,G::unit());\t\t\n\t\tbit1.assign(n + 1,G::unit());\t\n\t}\n\tFenwick(VI<X>&\
     \ A):Fenwick(SZ(A)){\n\t\tFOR(i,SZ(A)){\n\t\t\tupdate(i + 1,i + 1,A[i]);\n\t\t\
-    }\n\t}\n\tX get(int r){ //A[1] op ... a[r]\n\t\tX sum0 = G::unit(), sum1 = G::unit();\n\
-    \t\tint tr = r;\n\t\tfor(;r > 0;r -= r & -r){\n\t\t\tsum0 = G::op(sum0,bit0[r]);\n\
-    \t\t\tsum1 = G::op(sum1,bit1[r]);\n\t\t}\n\t\t return G::op(G::power(sum0, tr),\
-    \ sum1);\n\t}\n\tX get(int l,int r){\n\t\treturn G::op(get(r),G::inverse(get(l\
-    \ - 1)));\t\n\t}\n\tvoid update(VI<X>& bit,int idx,X del){ //1-indexed q\n\t\t\
-    FOR(i,idx,n + 1,i & -i) bit[i] = G::op(bit[i],del);\n\t}\n\tvoid update(int l,int\
-    \ r,X x){\n\t\tupdate(bit0, l, x);\n        update(bit0, r + 1, G::inverse(x));\n\
-    \        update(bit1, l, G::inverse(x) * (l - 1));\n        update(bit1, r + 1,\
-    \ x * r);\n\t}\n};\n#line 8 \"test/mytest/fenwickraq.test.cpp\"\nstruct Naive\
-    \ {\n    vector<LL> arr;\n    Naive(int n) : arr(n + 1, 0) {}\n\n    void add(int\
-    \ l, int r, LL x) {\n        for (int i = l; i <= r; ++i) {\n            arr[i]\
-    \ += x;\n        }\n    }\n\n    LL get(int l, int r) {\n        LL sum = 0;\n\
-    \        for (int i = l; i <= r; ++i) {\n            sum += arr[i];\n        }\n\
-    \        return sum;\n    }\n};\nvoid test(){\n    const int N = RNG(1,100);\n\
-    \    const int Q = RNG(1,100);\n    VI<LL> arr(N);\n    FOR(i,N) arr[i] = RNG(-100,100);\n\
+    }\n\t}\n\tX get(int r) {\n        X sum0 = G::unit(), sum1 = G::unit();\n    \
+    \    int tr = r;\n        for (; r > 0; r -= r & -r) {\n            sum0 = G::op(sum0,\
+    \ bit0[r]);\n            sum1 = G::op(sum1, bit1[r]);\n        }\n        return\
+    \ G::op(G::power(sum0, tr), sum1);\n    }\n\tX get(int l, int r) {\n        return\
+    \ G::op(get(r), G::inverse(get(l - 1)));\n    }\n\tvoid update(VI<X>& bit,int\
+    \ idx,X del){ //1-indexed q\n\t\tFOR(i,idx,n + 1,i & -i) bit[i] = G::op(bit[i],del);\n\
+    \t}\n\tvoid update(int l,int r,X x){\n\tupdate(bit0, l, G::power(x, 1));\n   \
+    \     update(bit0, r + 1, G::inverse(G::power(x, 1)));\n        update(bit1, l,\
+    \ G::inverse(G::power(x, l - 1)));\n        update(bit1, r + 1, G::power(x, r));\n\
+    \t}\n};\n#line 8 \"test/mytest/fenwickraq.test.cpp\"\nstruct Naive {\n    vector<LL>\
+    \ arr;\n    Naive(int n) : arr(n + 1, 0) {}\n\n    void add(int l, int r, LL x)\
+    \ {\n        for (int i = l; i <= r; ++i) {\n            arr[i] += x;\n      \
+    \  }\n    }\n\n    LL get(int l, int r) {\n        LL sum = 0;\n        for (int\
+    \ i = l; i <= r; ++i) {\n            sum += arr[i];\n        }\n        return\
+    \ sum;\n    }\n};\nvoid test(){\n    const int N = RNG(1,100);\n    const int\
+    \ Q = RNG(1,100);\n    VI<LL> arr(N);\n    FOR(i,N) arr[i] = RNG(-100,100);\n\
     \    Fenwick<Monoid_Add<LL>> fenwick(arr);\n    Naive naive(N);\n     FOR(i,N)\
     \ naive.add(i + 1, i + 1, arr[i]);\n    \n    FOR(Q) {\n        int type = RNG(1,\
     \ 3);  \n        int l = RNG(1, N + 1);\n        int r = RNG(l, N + 1);\n    \
@@ -181,7 +182,7 @@ data:
   isVerificationFile: true
   path: test/mytest/fenwickraq.test.cpp
   requiredBy: []
-  timestamp: '2024-08-30 11:48:08+05:00'
+  timestamp: '2024-08-30 17:56:30+05:00'
   verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/mytest/fenwickraq.test.cpp

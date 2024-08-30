@@ -95,7 +95,3 @@ data:
       title: test/mytest/issubstring.test.cpp
 layout: toppage
 ---
-<ul>
-                    <li class="text-blue">(https://nyaannyaan.github.io/library/)</li>
-                    <li class="text-green">(https://maspypy.github.io/library/)</li>
-                </ul>
