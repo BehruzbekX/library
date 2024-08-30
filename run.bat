@@ -36,10 +36,10 @@ for /d /r "%encodedRootDir%" %%D in (*) do (
 )
 
 :: Debug: Print the command to verify
-echo Running command: g++ !includeDirs!  !outputFile! -std=c++23 -O2 -Wall -Wextra -Wshadow -Wconversion -Wfloat-equal -Wduplicated-cond -Wlogical-op 2> error.log
+echo Running command: g++ !includeDirs!  !outputFile! -std=c++20 -O2 -Wall -Wextra -Wshadow -Wconversion -Wfloat-equal -Wduplicated-cond -Wlogical-op 2> error.log
 
 :: Run oj-bundle with the collected paths
-g++ !includeDirs! !outputFile! -std=c++23 -O2 -Wall -Wextra -Wshadow -Wconversion -Wfloat-equal -Wduplicated-cond -Wlogical-op 2> error.log
+g++ !includeDirs! !outputFile! -std=c++20 -O2 -Wall -Wextra -Wshadow -Wconversion -Wfloat-equal -Wduplicated-cond -Wlogical-op 2> error.log
 
 :: Check if there are errors
 if exist "error.log" (
