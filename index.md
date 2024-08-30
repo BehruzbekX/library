@@ -95,3 +95,40 @@ data:
       title: test/mytest/issubstring.test.cpp
 layout: toppage
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .dynamic-content {
+            margin: 20px 0;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="dynamic-content" id="additional-content"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var contentDiv = document.getElementById('additional-content');
+            contentDiv.innerHTML = `
+                <h2>Additional Information</h2>
+                <p>This is some extra content added dynamically.</p>
+                <ul>
+                    <li>Extra List Item 1</li>
+                    <li>Extra List Item 2</li>
+                </ul>
+            `;
+        });
+    </script>
+</body>
+</html>
