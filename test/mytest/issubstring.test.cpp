@@ -1,6 +1,6 @@
 #define PROBLEM "https://judge.yosupo.jp/problem/aplusb"
 
-#pragma once
+
 
 #include "template.hpp"
 #include "other/fastio.hpp"
