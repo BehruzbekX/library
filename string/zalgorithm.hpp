@@ -5,9 +5,9 @@
 
 template<typename E>
 vi zalgorithm(const E& s){
-    int n = SZ(s);
-    VI<LL> z(n);
-    LL l = 0,r = 0;
+    int n = sz(s);
+    vi z(n);
+    ll l = 0,r = 0;
     FOR(i,1,n){
         if(i < r) z[i] = min(r - i,z[i - l]);
         while(i + z[i] < n && s[z[i]] == s[i + z[i]])z[i]++;
