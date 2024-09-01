@@ -1,1 +1,6 @@
-{}
+{
+"test/library_checker/aplusb.test.cpp": "2024-09-01 12:11:39 +0500",
+"test/library_checker/point_add_range_sum.test.cpp": "2024-09-01 12:11:39 +0500",
+"test/mytest/fenwickraq.test.cpp": "2024-09-01 12:11:39 +0500",
+"test/mytest/fenwickxor.test.cpp": "2024-09-01 12:11:39 +0500"
+}
