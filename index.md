@@ -33,7 +33,7 @@ data:
     - icon: ':warning:'
       path: temp.cpp
       title: temp.cpp
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: template.hpp
       title: template.hpp
   - name: monoid
@@ -55,7 +55,7 @@ data:
       title: monoid/xor.hpp
   - name: other
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: other/fastio.hpp
       title: other/fastio.hpp
   - name: prime
@@ -65,7 +65,7 @@ data:
       title: prime/miller.hpp
   - name: random
     pages:
-    - icon: ':question:'
+    - icon: ':heavy_check_mark:'
       path: random/base.hpp
       title: random/base.hpp
     - icon: ':heavy_check_mark:'
@@ -73,13 +73,13 @@ data:
       title: random/shuffle.hpp
   - name: string
     pages:
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: string/is_substring.hpp
       title: string/is_substring.hpp
     - icon: ':warning:'
       path: string/prefix_function.hpp
       title: string/prefix_function.hpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: string/zalgorithm.hpp
       title: string/zalgorithm.hpp
   verificationCategories:
@@ -99,7 +99,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: test/mytest/fenwickxor.test.cpp
       title: test/mytest/fenwickxor.test.cpp
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: test/mytest/issubstring.test.cpp
       title: test/mytest/issubstring.test.cpp
 layout: toppage

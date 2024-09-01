@@ -7,13 +7,13 @@ data:
   - icon: ':heavy_check_mark:'
     path: monoid/xor.hpp
     title: monoid/xor.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: other/fastio.hpp
     title: other/fastio.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: random/base.hpp
     title: random/base.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.hpp
     title: template.hpp
   _extendedRequiredBy: []

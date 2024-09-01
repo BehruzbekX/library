@@ -1,26 +1,26 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: other/fastio.hpp
     title: other/fastio.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: random/base.hpp
     title: random/base.hpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: string/is_substring.hpp
     title: string/is_substring.hpp
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: string/zalgorithm.hpp
     title: string/zalgorithm.hpp
-  - icon: ':question:'
+  - icon: ':heavy_check_mark:'
     path: template.hpp
     title: template.hpp
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: cpp
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     '*NOT_SPECIAL_COMMENTS*': ''
     PROBLEM: https://judge.yosupo.jp/problem/aplusb
@@ -59,8 +59,8 @@ data:
   isVerificationFile: true
   path: test/mytest/issubstring.test.cpp
   requiredBy: []
-  timestamp: '2024-09-01 12:11:39+05:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2024-09-01 12:16:49+05:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: test/mytest/issubstring.test.cpp
 layout: document
