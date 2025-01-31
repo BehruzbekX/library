@@ -1,0 +1,70 @@
+[32mINFO[0m:onlinejudge_verify.config:no config file[0m
+[37mDEBUG[0m:onlinejudge_verify.languages.cplusplus_bundle:main.cpp: line 2: #include "template.hpp"[0m
+/mnt/c/users/hp/desktop/compro/library/template.hpp:41:45: warning: __VA_ARGS__ can only appear in the expansion of a C++11 variadic macro
+   41 |   vector<vector<type>> name(h, vector<type>(__VA_ARGS__))
+      |                                             ^
+/mnt/c/users/hp/desktop/compro/library/template.hpp:44:47: warning: __VA_ARGS__ can only appear in the expansion of a C++11 variadic macro
+   44 |       h, vector<vector<type>>(w, vector<type>(__VA_ARGS__)))
+      |                                               ^
+/mnt/c/users/hp/desktop/compro/library/template.hpp:48:54: warning: __VA_ARGS__ can only appear in the expansion of a C++11 variadic macro
+   48 |              b, vector<vector<type>>(c, vector<type>(__VA_ARGS__))))
+      |                                                      ^
+[37mDEBUG[0m:onlinejudge_verify.languages.cplusplus_bundle:/mnt/c/users/hp/desktop/compro/library/template.hpp: line 7: #include <bits/stdc++.h>[0m
+[37mDEBUG[0m:onlinejudge_verify.languages.cplusplus_bundle:main.cpp: line 3: #include "fastio.hpp"[0m
+/mnt/c/users/hp/desktop/compro/library/other/fastio.hpp:108: warning: "SHOW" redefined
+  108 | #define SHOW(...)
+      | 
+/mnt/c/users/hp/desktop/compro/library/other/fastio.hpp:99: note: this is the location of the previous definition
+   99 | #define SHOW(...) SHOW_IMPL(__VA_ARGS__, SHOW6, SHOW5, SHOW4, SHOW3, SHOW2, SHOW1)(__VA_ARGS__)
+      | 
+/mnt/c/users/hp/desktop/compro/library/other/fastio.hpp:112:9: warning: __VA_ARGS__ can only appear in the expansion of a C++11 variadic macro
+  112 |     int __VA_ARGS__; \
+      |         ^
+/mnt/c/users/hp/desktop/compro/library/other/fastio.hpp:113:7: warning: __VA_ARGS__ can only appear in the expansion of a C++11 variadic macro
+  113 |     R(__VA_ARGS__);
+      |       ^
+/mnt/c/users/hp/desktop/compro/library/other/fastio.hpp:115:8: warning: __VA_ARGS__ can only appear in the expansion of a C++11 variadic macro
+  115 |     ll __VA_ARGS__; \
+      |        ^
+/mnt/c/users/hp/desktop/compro/library/other/fastio.hpp:116:7: warning: __VA_ARGS__ can only appear in the expansion of a C++11 variadic macro
+  116 |     R(__VA_ARGS__);
+      |       ^
+/mnt/c/users/hp/desktop/compro/library/other/fastio.hpp:118:9: warning: __VA_ARGS__ can only appear in the expansion of a C++11 variadic macro
+  118 |     u64 __VA_ARGS__; \
+      |         ^
+/mnt/c/users/hp/desktop/compro/library/other/fastio.hpp:119:7: warning: __VA_ARGS__ can only appear in the expansion of a C++11 variadic macro
+  119 |     R(__VA_ARGS__);
+      |       ^
+/mnt/c/users/hp/desktop/compro/library/other/fastio.hpp:121:12: warning: __VA_ARGS__ can only appear in the expansion of a C++11 variadic macro
+  121 |     string __VA_ARGS__; \
+      |            ^
+/mnt/c/users/hp/desktop/compro/library/other/fastio.hpp:122:7: warning: __VA_ARGS__ can only appear in the expansion of a C++11 variadic macro
+  122 |     R(__VA_ARGS__);
+      |       ^
+/mnt/c/users/hp/desktop/compro/library/other/fastio.hpp:124:10: warning: __VA_ARGS__ can only appear in the expansion of a C++11 variadic macro
+  124 |     char __VA_ARGS__; \
+      |          ^
+/mnt/c/users/hp/desktop/compro/library/other/fastio.hpp:125:7: warning: __VA_ARGS__ can only appear in the expansion of a C++11 variadic macro
+  125 |     R(__VA_ARGS__);
+      |       ^
+/mnt/c/users/hp/desktop/compro/library/other/fastio.hpp:127:17: warning: __VA_ARGS__ can only appear in the expansion of a C++11 variadic macro
+  127 |     long double __VA_ARGS__; \
+      |                 ^
+/mnt/c/users/hp/desktop/compro/library/other/fastio.hpp:128:7: warning: __VA_ARGS__ can only appear in the expansion of a C++11 variadic macro
+  128 |     R(__VA_ARGS__);
+      |       ^
+[37mDEBUG[0m:onlinejudge_verify.languages.cplusplus_bundle:main.cpp: line 4: #include "rangefenwick.hpp"[0m
+/mnt/c/users/hp/desktop/compro/library/ds/fenwick/rangefenwick.hpp:1:9: warning: #pragma once in main file
+    1 | #pragma once
+      |         ^~~~
+[37mDEBUG[0m:onlinejudge_verify.languages.cplusplus_bundle:/mnt/c/users/hp/desktop/compro/library/ds/fenwick/rangefenwick.hpp: line 1: #pragma once[0m
+[37mDEBUG[0m:onlinejudge_verify.languages.cplusplus_bundle:/mnt/c/users/hp/desktop/compro/library/ds/fenwick/rangefenwick.hpp: line 2: #include "fenwick.hpp"[0m
+/mnt/c/users/hp/desktop/compro/library/ds/fenwick/fenwick.hpp:1:9: warning: #pragma once in main file
+    1 | #pragma once
+      |         ^~~~
+[37mDEBUG[0m:onlinejudge_verify.languages.cplusplus_bundle:/mnt/c/users/hp/desktop/compro/library/ds/fenwick/fenwick.hpp: line 1: #pragma once[0m
+[37mDEBUG[0m:onlinejudge_verify.languages.cplusplus_bundle:main.cpp: line 5: #include "base.hpp"[0m
+/mnt/c/users/hp/desktop/compro/library/random/base.hpp:1:9: warning: #pragma once in main file
+    1 | #pragma once
+      |         ^~~~
+[37mDEBUG[0m:onlinejudge_verify.languages.cplusplus_bundle:/mnt/c/users/hp/desktop/compro/library/random/base.hpp: line 1: #pragma once[0m
