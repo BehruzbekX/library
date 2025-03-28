@@ -15,21 +15,23 @@ data:
     - https://i.ibb.co/jkCpXcq/image.png
   bundledCode: "#line 2 \"string/zf.hpp\"\n\r\n//https://i.ibb.co/jkCpXcq/image.png\r\
     \n//https://codeforces.com/edu/course/2/lesson/3/2\r\n\r\ntemplate<typename E>\r\
-    \nvi zf(const E& s){\r\n    int n = sz(s);\r\n    vi z(n);\r\n    ll l = 0,r =\
-    \ 0;\r\n    FOR(i,1,n){\r\n        if(i < r) z[i] = min(r - i,z[i - l]);\r\n \
-    \       while(i + z[i] < n && s[z[i]] == s[i + z[i]])z[i]++;\r\n        if(i +\
-    \ z[i] > r) l = i,r = i + z[i];\r\n    }\r\n    return z;\r\n}\n"
+    \nvector<int> zf(const E& s){\r\n    int n = int(s.size());\r\n    vector<int>\
+    \ z(n);\r\n    int l = 0,r = 0;\r\n    for(int i=1;i<n;i++){\r\n        if(i <\
+    \ r) z[i] = min(r - i,z[i - l]);\r\n        while(i + z[i] < n && s[z[i]] == s[i\
+    \ + z[i]])z[i]++;\r\n        if(i + z[i] > r) l = i,r = i + z[i];\r\n    }\r\n\
+    \    return z;\r\n}\n"
   code: "#pragma once\r\n\r\n//https://i.ibb.co/jkCpXcq/image.png\r\n//https://codeforces.com/edu/course/2/lesson/3/2\r\
-    \n\r\ntemplate<typename E>\r\nvi zf(const E& s){\r\n    int n = sz(s);\r\n   \
-    \ vi z(n);\r\n    ll l = 0,r = 0;\r\n    FOR(i,1,n){\r\n        if(i < r) z[i]\
-    \ = min(r - i,z[i - l]);\r\n        while(i + z[i] < n && s[z[i]] == s[i + z[i]])z[i]++;\r\
-    \n        if(i + z[i] > r) l = i,r = i + z[i];\r\n    }\r\n    return z;\r\n}"
+    \n\r\ntemplate<typename E>\r\nvector<int> zf(const E& s){\r\n    int n = int(s.size());\r\
+    \n    vector<int> z(n);\r\n    int l = 0,r = 0;\r\n    for(int i=1;i<n;i++){\r\
+    \n        if(i < r) z[i] = min(r - i,z[i - l]);\r\n        while(i + z[i] < n\
+    \ && s[z[i]] == s[i + z[i]])z[i]++;\r\n        if(i + z[i] > r) l = i,r = i +\
+    \ z[i];\r\n    }\r\n    return z;\r\n}"
   dependsOn: []
   isVerificationFile: false
   path: string/zf.hpp
   requiredBy:
   - string/isb.hpp
-  timestamp: '2025-01-31 21:31:14+05:00'
+  timestamp: '2025-03-28 21:19:52+05:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
 documentation_of: string/zf.hpp

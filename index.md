@@ -1,6 +1,94 @@
 ---
 data:
   libraryCategories:
+  - name: .
+    pages:
+    - icon: ':warning:'
+      path: Map.hpp
+      title: A standard container made up of (key,value) pairs, which can be
+    - icon: ':warning:'
+      path: basis.hpp
+      title: basis.hpp
+    - icon: ':warning:'
+      path: dsu.hpp
+      title: dsu.hpp
+    - icon: ':warning:'
+      path: hash.hpp
+      title: hash.hpp
+    - icon: ':warning:'
+      path: inttemplate.hpp
+      title: inttemplate.hpp
+    - icon: ':warning:'
+      path: stringtrie.cpp
+      title: stringtrie.cpp
+    - icon: ':warning:'
+      path: template.hpp
+      title: template.hpp
+    - icon: ':warning:'
+      path: testtemp.hpp
+      title: testtemp.hpp
+    - icon: ':warning:'
+      path: trie.cpp
+      title: trie.cpp
+    - icon: ':warning:'
+      path: trielr.cpp
+      title: trielr.cpp
+  - name: atcoder
+    pages:
+    - icon: ':warning:'
+      path: atcoder/convolution.hpp
+      title: atcoder/convolution.hpp
+    - icon: ':warning:'
+      path: atcoder/dsu.hpp
+      title: atcoder/dsu.hpp
+    - icon: ':warning:'
+      path: atcoder/fenwicktree.hpp
+      title: atcoder/fenwicktree.hpp
+    - icon: ':warning:'
+      path: atcoder/internal_bit.hpp
+      title: atcoder/internal_bit.hpp
+    - icon: ':warning:'
+      path: atcoder/internal_math.hpp
+      title: atcoder/internal_math.hpp
+    - icon: ':warning:'
+      path: atcoder/internal_queue.hpp
+      title: atcoder/internal_queue.hpp
+    - icon: ':warning:'
+      path: atcoder/internal_scc.hpp
+      title: atcoder/internal_scc.hpp
+    - icon: ':warning:'
+      path: atcoder/internal_type_traits.hpp
+      title: atcoder/internal_type_traits.hpp
+    - icon: ':warning:'
+      path: atcoder/lazysegtree.hpp
+      title: atcoder/lazysegtree.hpp
+    - icon: ':warning:'
+      path: atcoder/math.hpp
+      title: atcoder/math.hpp
+    - icon: ':warning:'
+      path: atcoder/maxflow.hpp
+      title: atcoder/maxflow.hpp
+    - icon: ':warning:'
+      path: atcoder/mincostflow.hpp
+      title: atcoder/mincostflow.hpp
+    - icon: ':warning:'
+      path: atcoder/modint.hpp
+      title: atcoder/modint.hpp
+    - icon: ':warning:'
+      path: atcoder/scc.hpp
+      title: atcoder/scc.hpp
+    - icon: ':warning:'
+      path: atcoder/segtree.hpp
+      title: atcoder/segtree.hpp
+    - icon: ':warning:'
+      path: atcoder/string.hpp
+      title: atcoder/string.hpp
+    - icon: ':warning:'
+      path: atcoder/temp.cpp
+      title: atcoder/temp.cpp
+    - icon: ':warning:'
+      path: atcoder/twosat.hpp
+      title: atcoder/twosat.hpp
   - name: ds/fenwick
     pages:
     - icon: ':warning:'
@@ -28,17 +116,6 @@ data:
     - icon: ':warning:'
       path: ds/segtree/mergesorttree.hpp
       title: ds/segtree/mergesorttree.hpp
-  - name: .
-    pages:
-    - icon: ':warning:'
-      path: hash.hpp
-      title: hash.hpp
-    - icon: ':warning:'
-      path: template.hpp
-      title: template.hpp
-    - icon: ':warning:'
-      path: testtemp.hpp
-      title: testtemp.hpp
   - name: monoid
     pages:
     - icon: ':warning:'
@@ -106,6 +183,9 @@ data:
     - icon: ':warning:'
       path: string/kmp.hpp
       title: string/kmp.hpp
+    - icon: ':warning:'
+      path: string/temp.cpp
+      title: string/temp.cpp
     - icon: ':warning:'
       path: string/zf.hpp
       title: string/zf.hpp

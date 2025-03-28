@@ -4,29 +4,26 @@ data:
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
   _isVerificationFailed: false
-  _pathExtension: hpp
+  _pathExtension: cpp
   _verificationStatusIcon: ':warning:'
   attributes:
     links: []
-  bundledCode: '#line 2 "ds/segtree.hpp"
+  bundledCode: '#line 1 "atcoder/temp.cpp"
 
 
     '
-  code: '#pragma once
-
-
-    '
+  code: ''
   dependsOn: []
   isVerificationFile: false
-  path: ds/segtree.hpp
+  path: atcoder/temp.cpp
   requiredBy: []
   timestamp: '2025-03-28 21:19:52+05:00'
   verificationStatus: LIBRARY_NO_TESTS
   verifiedWith: []
-documentation_of: ds/segtree.hpp
+documentation_of: atcoder/temp.cpp
 layout: document
 redirect_from:
-- /library/ds/segtree.hpp
-- /library/ds/segtree.hpp.html
-title: ds/segtree.hpp
+- /library/atcoder/temp.cpp
+- /library/atcoder/temp.cpp.html
+title: atcoder/temp.cpp
 ---
