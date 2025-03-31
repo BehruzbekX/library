@@ -19,6 +19,9 @@ data:
       path: inttemplate.hpp
       title: inttemplate.hpp
     - icon: ':warning:'
+      path: lsg.cpp
+      title: lsg.cpp
+    - icon: ':warning:'
       path: stringtrie.cpp
       title: stringtrie.cpp
     - icon: ':warning:'
