@@ -16,6 +16,9 @@ data:
       path: hash.hpp
       title: hash.hpp
     - icon: ':warning:'
+      path: hld.hpp
+      title: hld.hpp
+    - icon: ':warning:'
       path: inttemplate.hpp
       title: inttemplate.hpp
     - icon: ':warning:'
